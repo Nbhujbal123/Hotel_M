@@ -1,0 +1,58 @@
+.cart-body{
+    background-color: rgb(228, 195, 170);
+    padding:10px;
+}
+.cart{
+    /* display:flex; */
+    /* justify-content: space-around; */
+    /* align-items:center; */
+    background-color:green;
+    color:white;
+    /* padding:10px 5px; */
+    /* margin:5px; */
+    gap:20px;
+}
+.table{
+    display:flex;
+    text-align:center;
+    width:50%;
+    justify-content: center;
+    border:1px solid;
+    padding:5px;
+    font-weight: bold;
+}
+.cart.img{
+    border-radius: 30px;
+    border:1px solid red;
+}
+.calculatedata{
+    display:flex;
+    justify-content:end;
+    /* border:1px solid; */
+    /* width:45%; */
+    gap:20px;
+    padding:5px;
+}
+.calculatedata button{
+    padding:5px;
+    font-size: 1em;
+    border:none;
+    border-radius: 10px;
+    background-color: rgb(232, 220, 220);
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.calculatedata div{
+    font-size: 1.3em;
+    padding: 5px;
+}
+@media screen and (max-width:480px) {
+    .table{
+        /* width:100%; */
+    }
+    .calculatedata{
+        /* width:90%; */
+    }
+    
+}

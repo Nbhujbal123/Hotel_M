@@ -1,0 +1,130 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;           /* ✅ this prevents horizontal overflow */
+  gap: 30px;
+  padding: 20px 0;
+  /* text-align:center; */
+  justify-content: center;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; 
+  /* border: 1px solid; */
+         /* optional: prevent scroll bar */
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 15px;
+  width: 200px;              /* Optional: fixed width for grid */
+}
+
+.item-box .item-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-box img {
+  border-radius: 10px;
+  transition:0.3s ease-in;
+  animation:foodback 1s;
+}
+
+.item-box .item-description{
+    font-size:17px;
+}
+
+.item-box button {
+  padding: 7px 14px;
+  background-color: gray;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.item-box button:hover{
+    background-color:rgb(101, 98, 98);
+}
+.food-item-counter{
+    position:absolute;
+    bottom:210px;
+    gap:5px;
+    right:0px;
+    display:flex;
+    color:tomato;
+    background-color:white;
+    border-radius:10px;  
+}
+.add-icon{
+    position:absolute;
+    bottom:210px;
+    right:0px;
+    cursor:pointer;
+}
+.table-no{
+  display:flex;
+  justify-content: space-between;
+  padding:5px;
+  /* border:1px solid; */
+  font-size:2.3em;
+  /* cursor: pointer; */
+}
+.table-no select{
+  padding:5px;
+  /* font-size:2.3em; */
+  font-weight: bold;
+  cursor: pointer;
+
+}
+.table-no button{
+  padding:5px;
+  font-size:0.5em;
+  font-weight: bold;
+  background-color: green;
+  color:white;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+.table-no select option{
+  font-size:1.3em;
+  /* background-color: red; */
+}
+
+@media screen and (max-width:480px){
+  .item-box img{
+    width:150px;
+  }
+  .item-box .add-icon{
+    width:30px;
+    left:120px;
+    bottom:125px
+  }
+  .food-item-counter img{
+    width:15px;
+  }
+  .food-item-counter{
+    right:15px;
+    bottom:125px;
+  }
+  .add-btn{
+    width:150px;
+  }
+  .item-box .item-name{
+    font-size:1.1em;
+    /* border:1px solid; */
+    width:150px;
+  }
+  .item-box{
+    width:160px;
+  }
+  .table-no{
+    font-size: 1.1em;
+  }
+
+}
+.bggreen{
+  background-color: green;
+}

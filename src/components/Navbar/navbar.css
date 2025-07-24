@@ -1,0 +1,66 @@
+
+.navbar{
+    padding:20px 20px;
+    display:flex;
+    justify-content: space-between;
+    /* position:sticky;
+    top:10px;
+    background-color:rgb(244, 164, 135);
+    border-radius: 10px;
+    color:white;
+    z-index:1; */
+}
+.navbar-menu{
+    display:flex;
+    list-style:none;
+    align-items:center;
+    gap:25px;
+    cursor:pointer;
+}
+.navbar-right{
+    display:flex;
+    justify-content: space-around;
+    gap:30px;
+    align-items: center;
+}
+.navbar-right button{
+    padding:7px 14px;
+    border-color:transparent;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.5s;
+}
+.navbar button:hover{
+    background-color:#fff4f2;
+}
+.active{
+    padding-bottom:2px;
+    border-bottom:2px solid gray;
+}
+.navbar-basketicon{
+    position:relative;
+}
+.navbar-basketicon .dot{
+    position:relative;
+    width: 10px;
+    height: 10px;
+    background-color:tomato;
+    border-radius:10px;
+    top:-32px;
+    right:-21px;
+}
+
+@media screen and (max-width:480px){
+    .logo{
+        width:80px;
+        height:35px;
+    }
+    .navbar{
+        padding:15px 5px;
+        /* border:2px solid; */
+        margin:0px;
+    }
+}
+
+
+
