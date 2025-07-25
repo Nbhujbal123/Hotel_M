@@ -90,7 +90,7 @@ export const Cart = () => {
 
             <div className="table">Table - {cartdata}</div>
 
-            <table style={{ width: "50%", textAlign: "center", fontWeight: "bold" }}>
+            <table style={{ textAlign: "center", fontWeight: "bold" }} className="cart-table">
                 <thead>
                     {
 
